@@ -1,0 +1,9 @@
+def replace_last(lst):
+    if len(lst) <= 1:
+        return lst
+    else:
+        lst.insert(0, lst.pop())
+        return lst
+
+numbers= []
+print(replace_last(numbers))
