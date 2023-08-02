@@ -1,8 +1,8 @@
-def chunking_by(lst, chunk_size):
-    if not lst or chunk_size <= 0:
+def chunking_by(numbers, chunk):
+    if not numbers or chunk <= 0:
         return []
 
-    return [lst[i:i+chunk_size] for i in range(0, len(lst), chunk_size)]
+    return [numbers[i:i+chunk] for i in range(0, len(numbers), chunk)]
 
 
 print(chunking_by([5, 4, 7, 3, 4, 5, 4], 3))
