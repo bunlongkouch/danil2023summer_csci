@@ -1,0 +1,6 @@
+def remove_all_after(lst, border):
+    try:
+        index = lst.index(border)
+        return lst[:index+1]
+    except ValueError:
+        return lst
